@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+.header {
+  height: 100px;
+  background: red;
+  background: #ffc600;
+  position: relative;
+  z-index: 1000;
+}
+.menuBtn {
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+.nav-item {
+  display: flex;
+  gap: 2rem;
+}
+.nav-item li {
+  list-style: none;
+}
+.nav-item li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+}
+.nav-item li a:hover {
+  color: #fff;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  object-position: center 15%;
+}
+.hero a {
+  text-decoration: none;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-text {
+  z-index: 1;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.hero-text p {
+  color: #fff;
+}
+.hero-text a {
+  text-decoration: none;
+}
+.hero span {
+}
+.btn-primary {
+  position: absolute;
+  background: #ffc600;
+  color: #333;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 25px;
+
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-primary:hover {
+  color: #fff;
+}
+.about {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.about-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.about img {
+  max-height: 400px;
+  width: 100%;
+  border-radius: 50%;
+}
+.about p {
+  font-size: 14px;
+}
+.about a {
+  text-decoration: none;
+}
+.icon-container {
+  display: inline-flex;
+  gap: 1rem;
+}
+.icon {
+  background: #ffc600;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.btn-secondary {
+  background: #ffc600;
+  color: #333;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 25px;
+  max-width: 200px;
+
+  border: none;
+  align-self: center;
+}
+.btn-secondary:hover {
+  color: #ffc600;
+  background: #333;
+}
+.projects {
+  background: #ffc600;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.project-card {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.skill {
+  background: #333;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+.skill ul li {
+  display: flex;
+  gap: 1rem;
+}
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #ffc600;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+.contact-form input {
+  padding: 0.8rem;
+  background: #333;
+  color: #fff;
+}
+.contact-form textarea {
+  padding: 0.8rem;
+  background: #333;
+  color: #fff;
+}
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+.footer p {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .nav-item{
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffc600;
+    color: #333;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .nav-item.active {
+    display: flex;
+  }
+  .nav-item li {
+    padding: 0.2rem 0.8rem;
+  }
+  .nav-item:hover {
+    color: #fff;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .btn-primary {
+    top: 70%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
