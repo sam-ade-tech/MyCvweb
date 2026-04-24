@@ -605,6 +605,11 @@ blockquote {
     grid-template-columns: 50px 20px 1fr;
     gap: 0 8px;
   }
+  .Projects-content {
+    overflow: hidden;
+    word-break: break-word;
+    min-width: 0;
+  }
   .view-services {
     display: none;
   }
