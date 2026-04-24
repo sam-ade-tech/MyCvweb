@@ -21,7 +21,7 @@ html {
 section {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1.5s ease, transform 0.8s eaase;
+  transition: opacity 1.5s ease, transform 0.8s ease;
 }
 section.visible {
   opacity: 1;
@@ -144,8 +144,6 @@ section.visible {
   color: #ffc600;
 }
 .about-title {
-  writing-mode: vertical-rl;
-  transform: rotate(-90deg);
   font-size: 50px;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -578,11 +576,18 @@ blockquote {
   .about {
     padding: 1rem 2rem;
   }
+  .about-image img {
+    width: 100%;
+    max-width: none;
+  }
   .about-image  img{
     position: static;
   }
   .skills {
     padding: 1rem 2rem;
+  }
+  .skill-middle {
+    min-height: 300px;
   }
   .Projects {
     padding: 1rem 2rem;
@@ -593,11 +598,11 @@ blockquote {
   .Projects-middle::before {
     top: 15px;
     bottom: 230px;
-    left: 89px;
+    left: 79px;
   }
 
   .Projects-item {
-    grid-template-columns: 20px 10px 1fr
+    grid-template-columns: 10px 10px 1fr
   }
   .view-services {
     display: none;
@@ -613,9 +618,6 @@ blockquote {
   }
   .about-left{
     align-items: start;
-  }
- .service-title {
-  
   }
   .nav-item {
     display: none;
