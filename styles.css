@@ -433,17 +433,18 @@ blockquote {
   padding-bottom: 60px;
   position: relative;
 }
-.Projects-middle::before {
+.Projects-item::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 164px;
+  top: 17px;
   width: 1px;
+  left: 116px;
+  height: 100%;
   background: #333;
+  z-index: 0;
 }
-.Projects-item:last-child {
-  padding-bottom: 0;
+.Projects-item:last-child::before {
+  display: none;
 }
 .Projects-dot {
   width: 12px;
@@ -595,11 +596,13 @@ blockquote {
   .Projects-middle {
     padding: 20px 16px;
   }
-  .Projects-middle::before {
-    top: 25px;
-    bottom: 190px;
-    left: 84px;
+  .Projects-item::before {
+    left: 68px;
   }
+  .Projects-item:last-child::before {
+    display: none;
+  }
+
   .Projects-item {
     grid-template-columns: 50px 20px 1fr;
     gap: 0 8px;
