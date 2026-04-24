@@ -575,17 +575,29 @@ blockquote {
   .hero-text span {
     display: none;
   }
+  .about {
+    padding: 1rem 2rem;
+  }
+  .about-image  img{
+    position: static;
+  }
+  .skills {
+    padding: 1rem 2rem;
+  }
+  .Projects {
+    padding: 1rem 2rem;
+  }
   .Projects-middle {
     padding-top: 10px;
   }
   .Projects-middle::before {
     top: 15px;
     bottom: 230px;
-    left: 114px;
+    left: 89px;
   }
 
   .Projects-item {
-    grid-template-columns: 40px 20px 1fr
+    grid-template-columns: 20px 10px 1fr
   }
   .view-services {
     display: none;
