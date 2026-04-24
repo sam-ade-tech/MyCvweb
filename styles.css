@@ -597,10 +597,9 @@ blockquote {
   }
   .Projects-middle::before {
     top: 25px;
-    bottom: 192px;
+    bottom: 190px;
     left: 84px;
   }
-
   .Projects-item {
     grid-template-columns: 50px 20px 1fr;
     gap: 0 8px;
