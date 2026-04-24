@@ -593,16 +593,17 @@ blockquote {
     padding: 1rem 2rem;
   }
   .Projects-middle {
-    padding-top: 10px;
+    padding: 20px 16px;
   }
   .Projects-middle::before {
-    top: 15px;
-    bottom: 230px;
-    left: 79px;
+    top: 25px;
+    bottom: 192px;
+    left: 84px;
   }
 
   .Projects-item {
-    grid-template-columns: 10px 10px 1fr
+    grid-template-columns: 50px 20px 1fr;
+    gap: 0 8px;
   }
   .view-services {
     display: none;
